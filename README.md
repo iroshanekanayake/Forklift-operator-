@@ -92,5 +92,14 @@ Lion Brewery (Biyagama). A phone-friendly web app (PWA) for the daily 21-point f
 - "Office copy: all forklifts" no longer adds the summary page. The PDF now holds one full weekly sheet per forklift (one page each, same layout as the single-forklift sheet), for every forklift that has at least one inspection that week.
 - Operator-only build support: set OPERATOR_ONLY = true at the top of the switchView code to hide Home / Monthly / Settings completely (see the separate operator zip). Service worker v23.
 
+## v7: shared settings
+- Forklifts, operators per department, supervisors, owners/models and the edit window are now shared through the cloud (document config/main). The newest change wins. The PIN is NOT shared (it stays on the supervisor's phone). The operator app only reads these settings.
+- One-time Firebase step: Firestore Database > Rules > paste the new FIRESTORE_RULES.txt (it adds a "config" rule) > Publish.
+- The first supervisor phone that opens this version with its saved settings uploads them; other phones then take them from the cloud.
+
+## v7.1: this-shift status
+- Home: the "Not checked this shift" box is now "This shift": every forklift as a chip, green = passed, red = failed, grey = not checked yet. Tap a grey chip to open the Inspect form with that forklift (and the current shift) selected; tap a green or red chip to see its record.
+- Operator app: a third tab "Today" shows the same panel (plus a DO NOT OPERATE notice if a forklift is locked). Service worker v25.
+
 ## OPERATOR APP (this zip)
-This is the operator-only build: only Inspect and Weekly. Home, Monthly and Settings do not exist in it. Upload these files to a NEW folder (for example "operator") next to the main app on GitHub Pages, or to a new repository, then open that address on the operators' phones and use Add to Home screen. It installs as a separate app called "Forklift Operator" and writes to the same cloud records as the main app. Records older than the edit window can only be corrected from the main (supervisor) app.
+Operator-only build: Inspect, Weekly and Today. Home, Monthly and Settings do not exist in it. Upload these files to its OWN repository (not the main app's), turn on GitHub Pages, and install it on the operators' phones with Add to Home screen. Forklifts, operator names and supervisors come from the main app's Settings through the cloud.

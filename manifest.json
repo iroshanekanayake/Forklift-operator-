@@ -1,7 +1,7 @@
 {
   "name": "Forklift Operator - Lion Brewery",
   "short_name": "Forklift Operator",
-  "description": "Forklift Pre-Check for operators (Inspect + Weekly only)",
+  "description": "Forklift Pre-Check for operators (Inspect, Weekly, Today)",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
