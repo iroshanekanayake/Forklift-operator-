@@ -113,5 +113,8 @@ Lion Brewery (Biyagama). A phone-friendly web app (PWA) for the daily 21-point f
 - Several forklifts can share one number (different company / fuel). Add them in Settings > Forklift Fleet: type the same number, choose the owner and model, press Add (it is saved as e.g. "FL 07 (Winwill, Gas)"). Each one has its own checks, weekly sheet, status chip and QR label.
 - A plain "FL 07" that shares its number now shows its own owner and fuel too, e.g. "FL 07 (Tasma, Battery)", in the Inspect list, Weekly list, status chips, QR labels and the printed sheet. The saved name is unchanged, so old records are safe. Service worker v28.
 
+## v8.3: Share PDF
+- Weekly screen: two new buttons, "Share PDF: this forklift" and "Share PDF: all forklifts". They make the weekly sheet(s) as a PDF file (same layout as the printed sheet, A4 landscape, one page per forklift) and open the phone's share menu (WhatsApp, Gmail, Drive...). On a device without a share menu (e.g. a computer) the PDF is saved to Downloads. Service worker v29.
+
 ## OPERATOR APP (this zip)
 Operator-only build: Inspect, Weekly, Today and Language. Home, Monthly and Settings do not exist in it. Upload these files to its OWN repository (not the main app's), keep GitHub Pages on.
