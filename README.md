@@ -138,5 +138,10 @@ Lion Brewery (Biyagama). A phone-friendly web app (PWA) for the daily 21-point f
 - When a day has two shifts, its box below the table shows Day shift and Night shift as two short blocks (time, operator, supervisor, hour meter).
 - The empty extra page is fixed: the whole weekly print now uses one page type, the small version label no longer prints, and a sheet that would be taller than one page is shrunk to fit. One forklift = one page. Service worker v34, label v10.1.
 
+## v10.2: Share PDF is a real PDF
+- "Share PDF: this forklift / all forklifts" now makes a real PDF (text and lines, no picture) with the same layout as the printed sheet, D / N columns included, one A4 landscape page per forklift. Sharp at any zoom, can be printed on any printer, text can be selected, and it is small (about 20 KB per forklift page, 30 forklifts is under 200 KB).
+- Letters Helvetica does not have (for example Sinhala remarks) are drawn as a small sharp picture inside the PDF, so they still show.
+- If something fails, the old picture version is used instead. The "Print / PDF" button is unchanged. Service worker v35, label v10.2.
+
 ## OPERATOR APP (this zip)
 Operator-only build: Inspect, Weekly, Today and Language. Home, Monthly and Settings do not exist in it. Upload these files to its OWN repository (not the main app's), keep GitHub Pages on.
