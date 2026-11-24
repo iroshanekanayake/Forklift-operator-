@@ -133,5 +133,10 @@ Lion Brewery (Biyagama). A phone-friendly web app (PWA) for the daily 21-point f
 - A critical failure (horn, seat belt, brake check, power steering, hand brake) already locked the forklift. Now a red "NOT SAFE TO OPERATE" box opens right after submitting, with a "Notify supervisor (WhatsApp)" button. Put the supervisor's WhatsApp number in Settings to open that chat directly; empty = the phone's share menu.
 - A normal defect (for example a signal light) that stays unrepaired for 5 days (Settings, 0 = never) stops the forklift too, like a critical failure, until a supervisor clears it. The Home list shows "Not repaired for N days". Service worker v33, label v10.
 
+## v10.1: weekly sheet with Day / Night columns, no extra page
+- Weekly sheet (Print / PDF and Share PDF): each day is split into two small columns, D (day shift) and N (night shift), with P, F or a dash in each. The old "D:P N:P" text in one cell is gone.
+- When a day has two shifts, its box below the table shows Day shift and Night shift as two short blocks (time, operator, supervisor, hour meter).
+- The empty extra page is fixed: the whole weekly print now uses one page type, the small version label no longer prints, and a sheet that would be taller than one page is shrunk to fit. One forklift = one page. Service worker v34, label v10.1.
+
 ## OPERATOR APP (this zip)
 Operator-only build: Inspect, Weekly, Today and Language. Home, Monthly and Settings do not exist in it. Upload these files to its OWN repository (not the main app's), keep GitHub Pages on.
