@@ -143,5 +143,10 @@ Lion Brewery (Biyagama). A phone-friendly web app (PWA) for the daily 21-point f
 - Letters Helvetica does not have (for example Sinhala remarks) are drawn as a small sharp picture inside the PDF, so they still show.
 - If something fails, the old picture version is used instead. The "Print / PDF" button is unchanged. Service worker v35, label v10.2.
 
+## v10.3: starts on Inspect, works on iPhone
+- The app now opens straight on the Inspect screen. Before, the Home screen showed for a moment and then switched, because the page itself started on Home. The theme colour is also set before the first paint.
+- iPhone / iPad: home-screen icon (180 px), full-screen app mode, safe area under the home bar, no zoom jump when a box is tapped, Safari blur support. On iPhone the "Print / PDF" buttons open the share menu with the real PDF (Print, Save to Files or WhatsApp are in that menu), because printing a web page on iPhone is unreliable.
+- A small tip bar appears on phones that have not installed the app yet: on iPhone it shows the 2 steps (Share, then Add to Home Screen), on Android an Install button. It can be closed and does not return for 14 days. QR scanning already works on iPhone (it uses the jsQR fallback). The flash button cannot work on iPhone, that is a Safari limit. Service worker v36, label v10.3.
+
 ## OPERATOR APP (this zip)
 Operator-only build: Inspect, Weekly, Today and Language. Home, Monthly and Settings do not exist in it. Upload these files to its OWN repository (not the main app's), keep GitHub Pages on.
