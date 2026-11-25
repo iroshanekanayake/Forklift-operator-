@@ -148,5 +148,9 @@ Lion Brewery (Biyagama). A phone-friendly web app (PWA) for the daily 21-point f
 - iPhone / iPad: home-screen icon (180 px), full-screen app mode, safe area under the home bar, no zoom jump when a box is tapped, Safari blur support. On iPhone the "Print / PDF" buttons open the share menu with the real PDF (Print, Save to Files or WhatsApp are in that menu), because printing a web page on iPhone is unreliable.
 - A small tip bar appears on phones that have not installed the app yet: on iPhone it shows the 2 steps (Share, then Add to Home Screen), on Android an Install button. It can be closed and does not return for 14 days. QR scanning already works on iPhone (it uses the jsQR fallback). The flash button cannot work on iPhone, that is a Safari limit. Service worker v36, label v10.3.
 
+## v10.4: Dark Coral is the default look again
+- A phone that has never picked a theme now starts with the original Dark Coral (orange) look. Fleet Pro is still in Settings > Application Theme Preset ("Fleet Pro (new look)"), and so are Sky Neumorphism and Official Corporate.
+- Only a theme the person really picks is remembered (a new setting name). Phones that got Fleet Pro automatically in v9 to v10.3 go back to Dark Coral; a phone that had really picked Sky or Corporate keeps it. Anyone who chose Fleet Pro on purpose has to pick it once more. Status bar colours are back to the original dark grey. Service worker v37, label v10.4.
+
 ## OPERATOR APP (this zip)
 Operator-only build: Inspect, Weekly, Today and Language. Home, Monthly and Settings do not exist in it. Upload these files to its OWN repository (not the main app's), keep GitHub Pages on.
